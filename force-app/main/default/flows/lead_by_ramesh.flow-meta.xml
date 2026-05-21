@@ -20,37 +20,22 @@
             </value>
         </inputParameters>
         <inputParameters>
-            <name>composeEmailContent</name>
+            <name>useEmailTemplate</name>
             <value>
                 <stringValue>True</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailSubject</name>
-            <value>
-                <stringValue>leades</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>emailBody</name>
+            <name>emailTemplateId</name>
             <value>
                 <inputConfiguratorMode>Custom</inputConfiguratorMode>
-                <stringValue>&lt;p&gt;fhsdfhalkjflkajflkajf&lt;/p&gt;</stringValue>
+                <stringValue>00XgK00000HIjOLUA1</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
             <name>recipientId</name>
             <value>
                 <elementReference>Loop_Through_Leads.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>relatedRecordId</name>
-        </inputParameters>
-        <inputParameters>
-            <name>logEmailOnSend</name>
-            <value>
-                <booleanValue>true</booleanValue>
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
@@ -84,7 +69,7 @@
     </assignments>
     <environments>Default</environments>
     <interviewLabel>lead by ramesh {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>lead email sending</label>
+    <label>lead by ramesh</label>
     <loops>
         <name>Loop_Through_Leads</name>
         <label>Loop Through Leads</label>
@@ -150,6 +135,7 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Email</queriedFields>
         <queriedFields>Is_Email_Sent__c</queriedFields>
+        <queriedFields>CreatedDate</queriedFields>
         <sortField>CreatedDate</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
